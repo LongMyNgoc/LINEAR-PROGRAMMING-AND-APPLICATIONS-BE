@@ -9,8 +9,8 @@ const uploadFile = async (req, res) => {
     const file = req.file;
     const fileName = file.originalname;
     const fileType = file.mimetype;
-    const folderName = 'TuLuanChuong1/';
-    const filePath = `${folderName}${fileName}`;
+    const folderName = req.body.folderName || 'DefaultFolder'; // Lấy tên thư mục từ request, nếu không có thì dùng mặc định
+    const filePath = `${folderName}/${fileName}`;
 
     try {
         // Kiểm tra xem file cũ có tồn tại không
