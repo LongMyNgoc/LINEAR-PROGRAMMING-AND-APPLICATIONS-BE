@@ -1,6 +1,6 @@
 const express = require('express');
 const multer = require('multer');
-const { listFiles, uploadFile, getFileByMSSV, deleteFileByMSSV, fileUpload } = require('../controllers/filecontroller.js');
+const { listFiles, uploadFile, getFileByMSSV, deleteFileByMSSV, fileUpload } = require('../controllers/controller.js');
 
 const router = express.Router();
 const upload = multer();
