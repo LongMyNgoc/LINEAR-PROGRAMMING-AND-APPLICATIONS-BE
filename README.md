@@ -28,9 +28,8 @@
 ## **Cấu hình biến môi trường**
 1. Tạo file `.env` trong thư mục gốc của dự án.
 2. Sử dụng file `.env.example` làm mẫu và cấu hình các biến môi trường. Các biến môi trường cần có:
-   # AWS S3 Storage
-   AWS_ACCESS_KEY_ID=your-access-key
-   AWS_SECRET_ACCESS_KEY=your-secret-key
+   - AWS_ACCESS_KEY_ID=your-access-key
+   - AWS_SECRET_ACCESS_KEY=your-secret-key
 
 ## Cài đặt và chạy dự án
 ### 1. Cài đặt dependencies
