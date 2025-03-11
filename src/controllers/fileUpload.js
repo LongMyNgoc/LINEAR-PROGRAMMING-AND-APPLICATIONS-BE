@@ -15,7 +15,7 @@ const fileUpload = async (req, res) => {
     try {
         // Chỉ upload file, không kiểm tra hoặc xóa file cũ
         const uploadParams = {
-            Bucket: 'longmyngoc2004',
+            Bucket: process.env.AWS_BUCKET_NAME,
             Key: filePath,
             Body: file.buffer,
             ContentType: fileType,

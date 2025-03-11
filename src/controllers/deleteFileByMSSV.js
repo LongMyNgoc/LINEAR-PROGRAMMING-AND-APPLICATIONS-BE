@@ -12,7 +12,7 @@ const deleteFileByMSSV = async (req, res) => {
     try {
         // Tìm file có tên trùng với MSSV trong thư mục
         const listParams = {
-            Bucket: 'longmyngoc2004',
+            Bucket: process.env.AWS_BUCKET_NAME,
             Prefix: `${folderName}/`, // Chỉ lấy file trong thư mục này
         };
 
@@ -32,7 +32,7 @@ const deleteFileByMSSV = async (req, res) => {
 
         // Xóa file
         const deleteParams = {
-            Bucket: 'longmyngoc2004',
+            Bucket: process.env.AWS_BUCKET_NAME,
             Key: fileToDelete.Key,
         };
 

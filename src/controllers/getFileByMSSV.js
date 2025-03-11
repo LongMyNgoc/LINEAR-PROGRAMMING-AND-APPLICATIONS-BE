@@ -11,7 +11,7 @@ const getFileByMSSV = async (req, res) => {
 
     try {
         const params = {
-            Bucket: 'longmyngoc2004',
+            Bucket: process.env.AWS_BUCKET_NAME,
             Prefix: `${folderName}/${mssv}`, // Dùng folderName động
         };
 

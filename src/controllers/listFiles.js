@@ -3,7 +3,7 @@ const s3 = require('../config/s3Config');
 
 const listFiles = async (req, res) => {
     try {
-        const params = { Bucket: 'longmyngoc2004' };
+        const params = { Bucket: process.env.AWS_BUCKET_NAME };
         const command = new ListObjectsV2Command(params);
         const response = await s3.send(command);
 

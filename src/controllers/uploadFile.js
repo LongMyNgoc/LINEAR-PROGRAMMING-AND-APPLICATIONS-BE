@@ -14,7 +14,7 @@ const uploadFile = async (req, res) => {
 
     try {
         // Kiểm tra xem file cũ có tồn tại không
-        const listParams = { Bucket: 'longmyngoc2004', Prefix: filePath };
+        const listParams = { Bucket: process.env.AWS_BUCKET_NAME, Prefix: filePath };
         const listCommand = new ListObjectsV2Command(listParams);
         const listResponse = await s3.send(listCommand);
 
@@ -28,7 +28,7 @@ const uploadFile = async (req, res) => {
 
         // Tiến hành upload file mới
         const uploadParams = {
-            Bucket: 'longmyngoc2004',
+            Bucket: process.env.AWS_BUCKET_NAME,
             Key: filePath,
             Body: file.buffer,
             ContentType: fileType,
