@@ -11,6 +11,27 @@
 ## Yêu cầu hệ thống
 - **Node.js** phiên bản **20.17.0** (Cần cài đặt trước khi chạy dự án)
 
+## **Cấu hình AWS S3**
+1. **Tạo Bucket** trên AWS S3 với 5 thư mục:
+    - `TuLuanChuong1`
+    - `TuLuanChuong2`
+    - `TuLuanChuong3`
+    - `TuLuanChuong4`
+    - `TuLuanChuong5`
+2. **Chọn Region**: `ap-southeast-2`
+3. Vào Thư mục `controllers` trong mã nguồn, tìm và chỉnh sửa tên Bucket theo tên Bucket mà bạn đã tạo.
+
+### **Lấy AWS Access Key và Secret Key**
+- Đăng nhập vào **AWS IAM**, tạo một **User** có quyền truy cập S3 và ghi nhớ `Access Key ID` và `Secret Access Key`.
+- Chỉnh sửa **IAM policy** để cấp quyền đọc/ghi cho các Bucket đã tạo.
+
+## **Cấu hình biến môi trường**
+1. Tạo file `.env` trong thư mục gốc của dự án.
+2. Sử dụng file `.env.example` làm mẫu và cấu hình các biến môi trường. Các biến môi trường cần có:
+   # AWS S3 Storage
+   AWS_ACCESS_KEY_ID=your-access-key
+   AWS_SECRET_ACCESS_KEY=your-secret-key
+
 ## Cài đặt và chạy dự án
 ### 1. Cài đặt dependencies
 Chạy lệnh sau để cài đặt các thư viện cần thiết:
