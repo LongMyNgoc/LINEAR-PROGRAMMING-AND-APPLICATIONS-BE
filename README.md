@@ -11,25 +11,36 @@
 ## Yêu cầu hệ thống
 - **Node.js** phiên bản **20.17.0** (Cần cài đặt trước khi chạy dự án)
 
-## **Cấu hình AWS S3**
-- **Tạo Bucket** trên AWS S3 với 5 thư mục:
+## Cấu hình AWS S3
+Trước khi chạy dự án, bạn cần cấu hình AWS S3 để lưu trữ các file bài tập nộp lên hệ thống.
+
+### 1. Tạo Bucket trên AWS S3
+- Truy cập vào **AWS S3** và tạo một Bucket với tên bạn muốn.
+- Tạo 5 thư mục con trong Bucket của bạn:
     - `TuLuanChuong1`
     - `TuLuanChuong2`
     - `TuLuanChuong3`
     - `TuLuanChuong4`
     - `TuLuanChuong5`
+- Chọn Region: **ap-southeast-2**
 
-### **Lấy AWS Access Key và Secret Key**
-- Đăng nhập vào **AWS IAM**, tạo một **User** có quyền truy cập S3 và ghi nhớ `Access Key ID` và `Secret Access Key`.
-- Chỉnh sửa **IAM policy** để cấp quyền đọc/ghi cho các Bucket đã tạo.
+### 2. Tạo IAM User và cấp quyền
+- Truy cập vào **AWS IAM**, tạo một **User** có quyền truy cập vào S3.
+- Cấp quyền **Read/Write** cho các Bucket mà bạn đã tạo.
+- Lưu lại **Access Key ID** và **Secret Access Key**.
 
-## **Cấu hình biến môi trường**
-1. Tạo file `.env` trong thư mục gốc của dự án.
-2. Sử dụng file `.env.example` làm mẫu và cấu hình các biến môi trường. Các biến môi trường cần có:
-   - AWS_ACCESS_KEY_ID=your-access-key
-   - AWS_SECRET_ACCESS_KEY=your-secret-key
-   - AWS_BUCKET_NAME=your-bucket-name
-   - AWS_REGION=your-region
+### 3. Cấu hình **AWS SDK**
+- Cài đặt **AWS SDK** cho Node.js:
+    ```bash
+    npm install aws-sdk
+    ```
+
+## Cấu hình biến môi trường
+Tạo file `.env` trong thư mục gốc của dự án và cấu hình các biến môi trường như sau:
+
+- AWS_ACCESS_KEY_ID=your-access-key
+- AWS_SECRET_ACCESS_KEY=your-secret-key
+- AWS_BUCKET_NAME=your-bucket-name
 
 ## Cài đặt và chạy dự án
 ### 1. Cài đặt dependencies
