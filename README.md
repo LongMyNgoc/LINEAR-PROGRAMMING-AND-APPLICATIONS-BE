@@ -73,5 +73,4 @@ Mọi ý kiến đóng góp hoặc báo lỗi có thể được gửi qua hệ 
 
 ## Thông tin liên hệ
 📧 Email: longmyngoc2004@gmail.com  
-🌐 Website: https://nckh-qhtt-be.onrender.com/ 
 - 📌 **Lưu ý:** Đây là hệ thống nội bộ dành riêng cho học phần **Quy hoạch tuyến tính và Ứng dụng** tại Trường Đại học Sư phạm TP.HCM. Mọi thông tin và dữ liệu liên quan đến khóa học cần được bảo mật và tuân thủ quy định nhà trường.
