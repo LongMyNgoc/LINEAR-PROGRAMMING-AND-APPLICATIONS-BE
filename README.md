@@ -1,4 +1,8 @@
 # LINEAR PROGRAMMING AND APPLICATIONS (BACK-END)
+<p align="center">
+  <img src="assets/Home.png" alt="Home" width="100%" style="display: block; margin-bottom: 20px;">
+  <img src="assets/Course.png" alt="Course" width="100%" style="display: block;">
+</p>
 
 ## Giới thiệu
 **Linear Programming and Applications (Back-End)** là hệ thống hỗ trợ học tập trực tuyến cho học phần **Quy hoạch tuyến tính và Ứng dụng** tại Trường Đại học Sư phạm TP.HCM. Hệ thống cung cấp API để quản lý khóa học, người dùng và bài tập, giúp kết nối với Front-End nhằm mang lại trải nghiệm học tập hiệu quả.
@@ -72,5 +76,4 @@ Hệ thống back-end được triển khai trên **Render**. Nếu bạn muốn
 Mọi ý kiến đóng góp hoặc báo lỗi có thể được gửi qua hệ thống quản lý mã nguồn của dự án hoặc liên hệ với nhóm phát triển. Chúng tôi hoan nghênh mọi sự đóng góp để cải thiện hệ thống!
 
 ## Thông tin liên hệ
-📧 Email: longmyngoc2004@gmail.com  
-- 📌 **Lưu ý:** Đây là hệ thống nội bộ dành riêng cho học phần **Quy hoạch tuyến tính và Ứng dụng** tại Trường Đại học Sư phạm TP.HCM. Mọi thông tin và dữ liệu liên quan đến khóa học cần được bảo mật và tuân thủ quy định nhà trường.
+📧 Email: longmyngoc2004@gmail.com 
