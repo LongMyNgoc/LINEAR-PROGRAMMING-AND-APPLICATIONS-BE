@@ -76,4 +76,5 @@ Hệ thống back-end được triển khai trên **Render**. Nếu bạn muốn
 Mọi ý kiến đóng góp hoặc báo lỗi có thể được gửi qua hệ thống quản lý mã nguồn của dự án hoặc liên hệ với nhóm phát triển. Chúng tôi hoan nghênh mọi sự đóng góp để cải thiện hệ thống!
 
 ## Thông tin liên hệ
-📧 Email: nguyenphilong.dev@gmail.com 
+- 📧 Email: nguyenphilong.dev@gmail.com 
+- 🌐 Portfolio: https://nguyenphilongportfolio.vercel.app/
